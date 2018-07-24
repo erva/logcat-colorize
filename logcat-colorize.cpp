@@ -85,7 +85,6 @@ public:
     static const string fgreen;
     static const string fyellow;
     static const string fblue;
-    static const string fpurple;
     static const string fcyan;
     static const string fwhite;
     static const string fgrey;
@@ -107,7 +106,6 @@ const string Color::fred       = "\033[0;31m";
 const string Color::fgreen     = "\033[0;32m";
 const string Color::fyellow    = "\033[0;33m";
 const string Color::fblue      = "\033[0;34m";
-const string Color::fpurple    = "\033[0;35m";
 const string Color::fcyan      = "\033[0;36m";
 const string Color::fwhite     = "\033[0;37m";
 const string Color::fgrey      = "\033[1;30m";
@@ -175,7 +173,7 @@ public:
         
         // date    
         if (this->l.date != "") 
-            out += Color::fpurple + " " + this->l.date + " " + Color::reset;
+            out += Color::fwhite + " " + this->l.date + " " + Color::reset;
         
         // level
         if (this->l.level != "") {
