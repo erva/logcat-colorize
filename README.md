@@ -14,17 +14,6 @@ I would also recommend: [Android Bash Completion][4]
 
 # Installation
 
-## PPA (for Ubuntu-ers)
-
-I created a DEB package and placed in my personal launchpad repository, for Ubuntu (and alike) convenience:
-
-        $ sudo add-apt-repository -y ppa:bruno-braga/logcat-colorize
-        $ sudo apt-get update
-        $ sudo apt-get install -y logcat-colorize
-
-*Note*: from quantal (12.10) and newer versions only (older versions might require some tackle in the C++ code).
-
-
 ## DIY (from sources)
 
 This depends on:
@@ -42,7 +31,7 @@ If you are on Mac OS X (using macports with libs installed in /opt/local):
 
 Compile and install:
 
-        # download (or clone) the source
+        $ git clone https://github.com/erva/logcat-colorize.git 
         $ make
         $ sudo make install
 
